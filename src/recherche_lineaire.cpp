@@ -2,7 +2,7 @@
  * @ Author: vlagard@btslivh.eu
  * @ Create Time: 2022-12-11 14:23:16
  * @ Modified by: Valentin LAGARD
- * @ Modified time: 2022-12-11 22:47:39
+ * @ Modified time: 2022-12-11 22:57:54
  * @ Description: 
  */
 
@@ -11,7 +11,7 @@
 void recherche_lineaire()
 {
     int compteur, nb_compar, taille_v_dico;
-    bool trouve;
+    bool trouve = false;
     std::ifstream liste_francais;
     std::string mot_a_trouver, mot, mot_vecteur;
     std::vector <std::string> v_dico;
@@ -20,7 +20,7 @@ void recherche_lineaire()
     if (!liste_francais.is_open()) {
         std::cout << "Impossible d'ouvrir le fichier en lecture." << std::endl;
     } else {
-        while (std::getline(liste_francais, mot))
+        while (std::getline(liste_francais, mot, '\n'))
             v_dico.push_back(mot);
         liste_francais.close();
         taille_v_dico = v_dico.size();

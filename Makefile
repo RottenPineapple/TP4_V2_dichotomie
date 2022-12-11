@@ -7,7 +7,8 @@
 #
 
 SRC	=	src/main.cpp	\
-		src/recherche_lineaire.cpp
+		src/recherche_lineaire.cpp	\
+		src/recherche_dichotomique.cpp
 
 
 NAME	=	./bin/TP3

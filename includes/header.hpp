@@ -2,7 +2,7 @@
  * @ Author: vlagard@btslivh.eu
  * @ Create Time: 2022-12-11 14:01:43
  * @ Modified by: Valentin LAGARD
- * @ Modified time: 2022-12-11 22:05:35
+ * @ Modified time: 2022-12-11 23:13:21
  * @ Description: header file for the TP4 project
  */
 
@@ -16,5 +16,6 @@
 #include <fstream>
 
 void recherche_lineaire();
+void recherche_dichotomique();
 
 #endif /* !HEADER_H_ */
